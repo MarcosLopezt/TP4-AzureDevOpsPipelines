@@ -32,11 +32,11 @@ stages:
             displayName: "Install & Build (front)"
 
           - task: PublishBuildArtifacts@1
-            displayName: "Publish artifact: front_dist"
             inputs:
-              PathtoPublish: "$(Build.SourcesDirectory)/front/dist"
-              ArtifactName: "front_dist"
+              PathtoPublish: "$(Build.SourcesDirectory)/front"
+              ArtifactName: "front_bundle"
               publishLocation: "Container"
+            displayName: "Publish front_bundle (full front/)"
 
       # --- Back -
       - job: Build_Back
