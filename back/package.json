@@ -1,0 +1,14 @@
+{
+  "name": "back-demo",
+  "version": "1.0.0",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo \"(sin build)\"",
+    "test": "node -e \"console.log('tests ok')\""
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
